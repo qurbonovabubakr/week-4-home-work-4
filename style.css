@@ -15,10 +15,6 @@ a {
     padding: 25px 60px;
 }
 
-.logo {
-    margin: 0;
-}
-
 .links a {
     margin: 0 10px;
 }
@@ -87,7 +83,6 @@ a {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    flex: 1;
 }
 
 .row {
@@ -99,16 +94,10 @@ a {
     background: #f4f4f4;
     padding: 25px;
     border-radius: 6px;
-    flex: 1;
-}
-
-.speaking {
-    width: 300px;
-    flex: none;
 }
 
 .card img {
-    width: 100%;
+    width: 250px;
 }
 
 .card h3 {
@@ -131,12 +120,87 @@ a {
 
 .listening {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.about-left {
+    width: 400px;
+}
+
+.about-left h1 {
+    font-size: 32px;
+}
+
+.about-left p {
+    color: gray;
+    font-size: 14px;
+}
+
+.numbers {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.numbers h2 {
+    font-size: 30px;
+}
+
+.numbers h4 {
+    color: gray;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.about-img {
+    width: 500px;
+}
+
+.pricing {
+    padding: 60px;
+}
+
+.pricing-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.plans {
+    display: flex;
     justify-content: space-between;
 }
 
-.listening img {
-    width: 250px;
+.plan {
+    width: 30%;
+}
+
+.plan img {
+    width: 300px;
+}
+
+.plan h3 {
+    font-size: 20px;
+}
+
+.plan p {
+    color: gray;
+    font-size: 14px;
+}
+
+.price {
+    display: inline-block;
+    background: #eeeeee;
+    padding: 8px 14px;
+    border-radius: 4px;
+    margin-top: 15px;
 }
 
 @media (max-width: 500px) {
@@ -190,85 +254,50 @@ a {
         flex-direction: column;
     }
 
-    .speaking {
-        width: 100%;
+    .card img {
+        width: 200px;
     }
 
     .listening {
         flex-direction: column;
     }
 
-    .listening img {
+    .about {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .about-left {
         width: 100%;
     }
-}
 
-.skills {
-    padding: 40px 60px;
-}
+    .numbers {
+        justify-content: center;
+        gap: 30px;
+    }
 
-.skills-title {
-    text-align: center;
-    margin-bottom: 50px;
-}
+    .about-img {
+        width: 250px;
+    }
 
-.cards {
-    display: flex;
-    gap: 12px;
-}
+    .pricing {
+        padding: 20px;
+    }
 
-.right {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    flex: 1;
-}
+    .plans {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.row {
-    display: flex;
-    gap: 12px;
-}
+    .plan {
+        width: 100%;
+        margin-bottom: 40px;
+    }
 
-.card {
-    background: #f4f4f4;
-    padding: 25px;
-    border-radius: 6px;
-    flex: 1;
-}
+    .plan img {
+        height: 250px;
+        width: auto;
+    }
 
-.speaking {
-    width: 300px;
-    flex: none;
-}
-
-.card img {
-    width: 100%;
-}
-
-.card h3 {
-    font-size: 20px;
-}
-
-.card p {
-    color: gray;
-    font-size: 13px;
-}
-
-.btn {
-    display: inline-block;
-    background: #263238;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 4px;
-    margin-top: 15px;
-}
-
-.listening {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.listening img {
-    width: 250px;
 }
