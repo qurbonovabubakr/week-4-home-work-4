@@ -301,3 +301,92 @@ a {
     }
 
 }
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px 80px;
+    padding: 60px;
+}
+
+.contact-img {
+    width: 400px;
+}
+
+.contact-text {
+    width: 400px;
+}
+
+.contact-text h1 {
+    font-size: 32px;
+}
+
+.contact-text p {
+    color: gray;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.title-phone {
+    display: none;
+}
+
+.form {
+    display: flex;
+    gap: 6px;
+}
+
+.form input {
+    width: 240px;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+.form button {
+    background: #263238;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 30px;
+}
+
+@media (max-width: 500px) {
+    .contact {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .title-desktop {
+        display: none;
+    }
+
+    .title-phone {
+        display: block;
+        font-size: 24px;
+    }
+
+    .contact-img {
+        width: 200px;
+    }
+
+    .contact-text {
+        width: 100%;
+    }
+
+    .form {
+        justify-content: center;
+    }
+
+    .form input {
+        width: 150px;
+    }
+
+    .form button {
+        padding: 15px 20px;
+    }
+}
